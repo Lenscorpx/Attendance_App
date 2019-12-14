@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A08172E8-C857-4103-91C3-D77B9A5D300C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Attendance_App</RootNamespace>
+    <AssemblyName>Attendance_App</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\LensCorp\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>User Shield_26px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E550D230C46B7B1B426D8085BD4748CDDBCFDC2E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Attendance_App_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>K:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="LiveCharts">
+      <HintPath>K:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms">
+      <HintPath>K:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>K:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>K:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.3.6\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow">
+      <HintPath>K:\Data Center\Projects Datas\CodeLabs\Mes Frameworks\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net461\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net461\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data_Library\Data_Repository.cs" />
+    <Compile Include="Data_Library\Params.cs" />
+    <Compile Include="Forms_Library\frm_confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Library\frm_confirmation.Designer.cs">
+      <DependentUpon>frm_confirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Library\frm_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Library\frm_dashboard.Designer.cs">
+      <DependentUpon>frm_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Library\frm_employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Library\frm_employees.Designer.cs">
+      <DependentUpon>frm_employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\uc_access_level.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_access_level.Designer.cs">
+      <DependentUpon>uc_access_level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_accreditation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_accreditation.Designer.cs">
+      <DependentUpon>uc_accreditation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_affectation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_affectation.Designer.cs">
+      <DependentUpon>uc_affectation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_attendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_attendance.Designer.cs">
+      <DependentUpon>uc_attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_barcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_barcode.Designer.cs">
+      <DependentUpon>uc_barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_guests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_guests.Designer.cs">
+      <DependentUpon>uc_guests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_guests_search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_guests_search.Designer.cs">
+      <DependentUpon>uc_guests_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_organisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_organisation.Designer.cs">
+      <DependentUpon>uc_organisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_scanpage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_scanpage.Designer.cs">
+      <DependentUpon>uc_scanpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_splash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_splash.Designer.cs">
+      <DependentUpon>uc_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_zone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_zone.Designer.cs">
+      <DependentUpon>uc_zone.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms_Library\frm_confirmation.resx">
+      <DependentUpon>frm_confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Library\frm_dashboard.resx">
+      <DependentUpon>frm_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Library\frm_employees.resx">
+      <DependentUpon>frm_employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\uc_access_level.resx">
+      <DependentUpon>uc_access_level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_accreditation.resx">
+      <DependentUpon>uc_accreditation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_affectation.resx">
+      <DependentUpon>uc_affectation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_attendance.resx">
+      <DependentUpon>uc_attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_barcode.resx">
+      <DependentUpon>uc_barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_guests.resx">
+      <DependentUpon>uc_guests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_guests_search.resx">
+      <DependentUpon>uc_guests_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_organisation.resx">
+      <DependentUpon>uc_organisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_scanpage.resx">
+      <DependentUpon>uc_scanpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_splash.resx">
+      <DependentUpon>uc_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_zone.resx">
+      <DependentUpon>uc_zone.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Attendance_App_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stairs Up_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wi-Fi_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus 2 Math_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Multiply 2_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Database_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metal Detector_104pxred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner 2_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus Math _104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner 2_104pxE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner 2_104pxf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guest Male_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm Clock_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firewire_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embassy_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geo-fence_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Entry_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb-01l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Checked_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fingerprint Scan_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Human Footprints_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus Math _104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2222396.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_zMQWy85mJ5OYBR0M26q64w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find User Male_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner 2_104pxw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save as_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_104pxre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm Clock_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode Scanner_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firewire_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security Checked_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detective_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Geo-fence_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apartment_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No Entry_104px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Video Editing_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User Shield_26px.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
