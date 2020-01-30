@@ -262,7 +262,6 @@
     <EmbeddedResource Include="UserControls\uc_zone.resx">
       <DependentUpon>uc_zone.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Attendance_App_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
